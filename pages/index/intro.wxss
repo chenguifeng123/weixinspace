@@ -1,0 +1,34 @@
+.page__title{
+  font-size: 0.8em;
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 5px;
+}
+
+.weui-article__section{
+  border:1px solid #F3434B;
+}
+
+.weui-article__h1{
+  text-align: center;
+  color: #F3434B;
+}
+
+.split{
+  border:1.5px solid #F3434B;
+  width: 100%;
+}
+
+.show-article{
+  width: 100%;
+  height: 180px;
+}
+
+.show-article1{
+  width: 100%;
+  height: 240px;
+}
+
+.article-text{
+  display: block;
+  text-indent:20px;
+}

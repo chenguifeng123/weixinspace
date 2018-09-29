@@ -1,0 +1,13 @@
+<view class="page">
+
+
+<view class="page__bd">
+
+        <view class="weui-panel weui-panel_access one-class" wx:for="{{joinClassList}}" wx:key = "{{item.classId}}"  data-class="{{item.classId}}" data-minnum="{{item.minNum}}"  bindtap="joinPerson">
+          <include src="../common/classTemp.wxml"></include>
+        </view>
+
+    <button class="weui-btn btn-joinClass" open-type="getUserInfo" bindgetuserinfo="joinClass" bindtap="joinClass">发起拼班</button>
+
+</view>
+</view>

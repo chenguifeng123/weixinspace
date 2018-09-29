@@ -1,0 +1,11 @@
+<view>
+
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+            <image class="sales" src="/pages/img/sales.jpg" > </image>
+            </view>
+            <view class="weui-media-box weui-media-box_text sales-text">
+            欢迎光临红提小店,请扫描小店二维码
+            </view>
+        </view>
+</view>        

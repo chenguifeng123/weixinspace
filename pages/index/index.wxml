@@ -1,0 +1,65 @@
+
+<view class="page">
+
+  <!-- 页面图标和开始 -->
+  <view class="top-menu">
+    <swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}" wx:key="item.link">  
+        <swiper-item>  
+           <navigator url="{{item.link}}" hover-class="navigator-hover" open-type="switchTab" wx:if="{{item.isTab}}">  
+            <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+           </navigator>
+           <navigator url="{{item.link}}" hover-class="navigator-hover" open-type="navigate" wx:else>  
+            <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+           </navigator>
+        </swiper-item>  
+      </block>  
+    </swiper> 
+
+    <view class="top-title">
+      <text class="title-desc" decode="emsp">&nbsp;&nbsp;待拼班级 </text>
+      <button class="weui-btn btn-first"  open-type="getUserInfo" bindgetuserinfo="joinClass">发起拼班</button> 
+    </view>
+  </view>
+
+  <view class="page__bd">
+        <!-- 拼班信息 -->
+        <view class="weui-panel weui-panel_access one-class" wx:for="{{pageJoinClass}}" wx:key = "{{item.classId}}"  data-class="{{item.classId}}" data-minnum="{{item.minNum}}"  bindtap="oneJoinClass">
+          <include src="../common/classTemp.wxml"></include>
+        </view>
+
+       <view class="show-more" bindtap="moreJoinClass">  <text> 查看更多>> </text> </view>
+
+      <!-- 外教信息 -->
+      
+      <view class="show-title"><text class="title-desc" decode="emsp">&nbsp;&nbsp;优质外教 </text> </view>
+
+      <view class="one-teacher" wx:for="{{pageTeacher}}" wx:for-index="index" data-index="{{index}}" wx:key = "{{item.teacherId}}" bindtap="oneTeacher"> 
+        <include src="../common/teacherTemp.wxml"></include>
+      </view>
+
+      <view class="show-more" bindtap="moreTeacher">  <text> 查看更多>> </text> </view>
+
+    <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">
+               <view class="weui-media-box__title weui-media-box__title_in-text show-title">
+                <text class="title-desc bottom-title" decode="emsp">&nbsp;&nbsp;成功拼班 </text>
+                <button class="weui-btn btn-first"  open-type="getUserInfo" bindgetuserinfo="joinClass">发起拼班</button> 
+                </view>
+            </view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__desc"> 
+                      <view class="weui-flex" wx:for="{{pageGrade}}" wx:key = "{{item.classId}}">
+                          <view><text class="red-text">●</text> <text decode="{{true}}" space="{{true}}">&nbsp; {{item.address}}&nbsp;&nbsp;</text><text>{{item.kidsNumber}}人</text></view>
+                      </view>
+                      </view>
+                </view>
+
+            </view>
+        </view>
+
+  </view>
+ 
+</view>

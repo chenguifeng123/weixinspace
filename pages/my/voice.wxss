@@ -1,0 +1,42 @@
+/* pages/my/voice.wxss */
+.show-aduio{
+  width: 100%;
+}
+.wx-audio-default{
+  width: 100%;
+}
+
+.weui-panel:after{
+  border-bottom: 0rpx;
+}
+
+.weui-panel__bd{
+  margin-left: 10px;
+}
+
+
+button[size="mini"]{
+  /*padding-left:20px;
+  padding-right:20px;*/
+  margin-left:3%;
+}
+
+
+button[disabled][type="default"], wx-button[disabled]:not([type]){
+  background-color: #F3434B;
+  color: white;
+}
+
+.desc-value{
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: center;
+}
+
+.weui-media-box__desc{
+  -webkit-line-clamp:initial;
+  color: initial;
+  font-size: 0.7em;
+  line-height: 1.5;
+  margin-left: 30px;
+}

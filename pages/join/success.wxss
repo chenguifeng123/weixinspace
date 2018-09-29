@@ -1,0 +1,69 @@
+
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 9000;
+    opacity: 0.7;
+}
+ 
+.modalDlg{
+    width: 580rpx;
+    height: 520rpx;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+    margin: -370rpx 85rpx;
+    background-color: #fff;
+    /* border-radius: 36rpx; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-content{
+  height: 320px;
+  flex-direction:row;
+  background-color: #F3434B;
+  width: 100%;
+
+}
+
+.top-font{
+  font-size: 1.1em;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+.bottom-content{
+  height: 200px;
+  flex-direction:row;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 5rpx;
+}
+
+.userinfo-nickname {
+  font-size: 0.8em;
+  display:block;
+  text-align:center;
+  overflow: hidden;
+  width: 79px;
+}
+
+.shareButton{
+  background: white;
+  border: none;
+}
+
+button[class="shareButton"]::after {
+  border: none;
+} 

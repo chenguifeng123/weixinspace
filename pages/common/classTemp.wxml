@@ -1,0 +1,30 @@
+            <!-- 基础信息 -->
+            <view class="weui-panel__hd"> 
+                <view class="class-address">
+                    <image src="/pages/img/tuijian.png" style="width: 15px; height: 15px; "/>
+                    <text decode="emsp">&nbsp;&nbsp;地址 : {{item.area}} {{item.address}}</text>
+                </view>
+                <view class="class-childage">
+                    <image src="/pages/img/child-age.png" style="width: 15px; height: 15px; "/>
+                    <text decode="emsp">&nbsp;&nbsp;孩子年龄 : {{item.childAge}} 岁</text>
+                </view>
+
+                <view style="font-size: 15px;color: #888888;" wx:if="{{item.lastNum != 0}}">已拼 <text class="red-text"> {{item.currentNum}} </text>人  还有<text class="red-text"> {{item.lastNum}} </text>人</view>
+                        <view style="font-size: 15px;color: #888888;" wx:else><text class="red-text">已拼满</text></view>
+
+            </view>
+            <!-- 拼班人员 -->
+            <view class="weui-panel__bd user-img">
+                           <view class="person-list" wx:for="{{item.personList}}" wx:key = "{{item.personId}}">
+                            <block>
+                                <image class="userinfo-avatar" src="{{item.iconPath}}" background-size="cover"></image>
+                                <text class="userinfo-nickname"> {{item.nickName}}</text>
+                            </block>
+                        </view>
+                        <view class="person-list" wx:for="{{item.lastNumList}}" wx:key = "{{index}}">
+                            <block>
+                                <image class="userinfo-avatar" src="/pages/img/help.png" background-size="cover"></image>
+                                <text decode="emsp" class="userinfo-nickname">&nbsp;</text>
+                            </block>
+                        </view>
+            </view>

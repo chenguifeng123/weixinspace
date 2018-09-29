@@ -1,0 +1,7 @@
+<view class="weui-media-box__desc">
+                    <button class="weui-btn mini-btn age-btn" size="mini" wx:for="{{age}}" wx:key="{{item}}" data-index="{{index}}" bindtap="ageConfirm" class="default-button-class" disabled="{{btnDisabled[index]}}" wx:if="{{index < 4}}">{{item}}</button>
+
+                    </view>
+                    <view class="weui-media-box__desc">
+                    <button class="weui-btn mini-btn age-btn" size="mini" wx:for="{{age}}" wx:key="{{item}}" data-index="{{index}}" bindtap="ageConfirm" class="default-button-class" disabled="{{btnDisabled[index]}}" wx:if="{{index >= 4}}">{{item}}</button>
+                    </view>

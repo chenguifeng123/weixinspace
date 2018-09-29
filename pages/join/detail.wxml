@@ -1,0 +1,29 @@
+<view>
+<view class="personal">
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+
+<view class="weui-cells__title">发起人不能取消拼班记录</view>
+                <view class="weui-cells weui-cells_after-title"  wx:if="{{hasJoin}}">
+
+<view class="weui-cell" wx:for="{{person}}" wx:key="{{item.address}}">
+        <view class="left" data-class="{{item.classId}}" data-minnum="{{item.minNum}}"  bindtap="jumpOneClass">
+          <view>地址 : {{item.address}}</view>
+                      <view style="font-size: 15px;color: #888888;" class="show-control">已拼 <text class="red-text"> {{item.currentNum}} </text>人  还有<text class="red-text"> {{item.lastNum}} </text>人 </view>
+        </view>
+        <view class="right">
+        <button class="weui-btn mini-btn btn-cancel" size="mini" data-person="{{item.personId}}" data-start="{{item.isStarter}}" disabled="{{ item.isStarter == 1 }}" bindtap="cancelJoinPerson">取消拼班</button>
+        </view>
+</view>
+                </view>
+
+                <view class="weui-cells weui-cells_after-title"  wx:else>
+                  <view class="weui-cell" >
+                  尚未有拼班记录
+                  </view>
+                </view>
+
+</view>                

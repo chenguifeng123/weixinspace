@@ -1,0 +1,40 @@
+/* pages/join/detail.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 5rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: white;
+  font-size: 1em;
+}
+
+.personal, button-personal{
+  background-color: #F3434B;
+  color: white;
+}
+
+.left{
+  width: 70%;
+}
+.right{
+  width: 30%;
+  float: right;
+}
+
+.btn-cancel{
+  background-color: #F3434B;
+  color: white;
+}
+
+.red-text{
+  color: red;
+}

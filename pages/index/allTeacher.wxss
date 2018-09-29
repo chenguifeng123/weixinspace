@@ -1,0 +1,10 @@
+@import "../common/teacherTemp.wxss";
+
+page, .page{
+  background-color: #eee;
+}
+
+.one-teacher{
+  margin: 10px;
+  background-color: white;
+}

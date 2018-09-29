@@ -1,0 +1,22 @@
+.age-btn{
+  width: 12.5%;
+}
+
+button[size="mini"]{
+  padding-left:20px;
+  padding-right:20px;
+  margin-left:8%;
+  background-color: #cccccc;
+  width: 15%;
+}
+
+button[disabled][type="default"], wx-button[disabled]:not([type]){
+  background-color: #F3434B;
+  color: white;
+}
+
+/*
+.default-button-class{
+  background-color: #F3434B;
+  color: white;
+}*/

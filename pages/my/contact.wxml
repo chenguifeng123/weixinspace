@@ -1,0 +1,63 @@
+<view>
+
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+            <image class="banner" src="/pages/img/contact.jpg" > </image>
+            </view>
+
+            <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__desc">
+                    <image src="../img/phone.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;" ></image>
+                    电话: 025-5878-3286    手机: 18913388884
+                    </view>
+            </view>
+
+            <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__desc">
+                    <image src="../img/network.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;" ></image>
+                    www.hometeach.cn
+                    </view>
+            </view>
+
+            <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__desc">
+                    <image src="../img/position.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;" ></image>
+                    南京市鼓楼区云南路20号鸿德大厦A座608室
+                    </view>
+            </view>
+
+        </view>
+        <view class="weui-panel weui-panel_access">
+           
+
+            <view class="weui-panel__bd">
+              <image class="address" src="/pages/img/firm-address.jpg" > </image>
+            </view>
+        </view>
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+
+            <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__desc">
+
+              <view class="weui-flex footer">
+                <view class="weui-flex__item">
+                  <view class="top"></view>
+                  <view class="placeholder"><image src="../img/QRCode.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;" ></image>
+                    <view class="middle-top"><text> 微信公众号 </text></view>
+                    <view class="middle-bottom"><text> HomeTeach 南京红提外教 </text></view>
+                    </view>
+                  <view class="bottom"></view>
+                  </view>
+                <view class="weui-flex__item">
+                  <view class="placeholder"><image class="qcode" src="/pages/img/qcode.jpg" > </image></view></view>
+              </view>
+
+                    </view>
+                  </view>
+
+            </view>
+        </view>
+
+<button class="weui-btn btn-connect" bindtap="connect">联系客服</button>        
+</view>        

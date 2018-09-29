@@ -1,0 +1,7 @@
+<view class="page">
+
+      <view class="one-teacher" wx:for="{{teacherList}}"  wx:for-index="index" data-index="{{index}}" wx:key = "{{item.teacherId}}"  bindtap="oneTeacher"> 
+        <include src="../common/teacherTemp.wxml"></include>
+      </view>
+
+</view>

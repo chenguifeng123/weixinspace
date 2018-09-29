@@ -1,0 +1,11 @@
+.weui-panel__hd{
+  font-size: 20px;
+}
+
+.ognization{
+  color: blue;
+}
+
+image{
+  height: 150px;
+}

@@ -1,0 +1,31 @@
+<!-- audio.wxml -->
+<view >
+<audio  src="{{src}}" name="{{name}}" author="{{author}}" id="myAudio" controls class="show-aduio"></audio>
+<!--image src="../img/share.png" bindtap="share" style="width:50px; height: 50px;"></image-->
+</view>
+
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">选集播放：</view>
+                        <view class="weui-media-box__desc">
+                        
+                        <button class="weui-btn mini-btn" size="mini" wx:for="{{lessonList}}" wx:key="{{item}}" data-index="{{index}}" bindtap="lessonClick" class="default-button-class" disabled="{{btnDisabled[index]}}">{{item.lessonId}}</button>
+
+                        </view>
+                    </view>
+            </view>
+        </view>
+
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title desc-value"wx:if="{{lessonIndex >= 0}}">{{book[bookId].desc}} Unit{{unitId}} Lesson{{lessonIndex + 1}}</view>
+                        <view class="weui-media-box__desc">
+                        <text> {{lessonText}} </text>
+                        </view>
+                    </view>
+            </view>
+        </view>
+  </view>        

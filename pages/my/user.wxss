@@ -1,0 +1,5 @@
+/* pages/my/user.wxss */
+.btn-user{
+  background-color: #F3434B;
+  color: white;
+}

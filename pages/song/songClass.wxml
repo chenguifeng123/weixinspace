@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="page__hd">
+        <view class="page__title" style="text-align:center;">英语儿歌</view>
+        <view class="page__desc"></view>
+    </view>
+
+  <view>
+    <view class="weui-cells weui-cells_after-title" wx:for="{{songClass}}" wx:key="{{item}}" data-index="{{index}}" data-class="{{item.songClassId}}" 
+    data-img="{{item.songImgPath}}" bindtap="songClick">
+      <image src="{{hometeach + item.songImgPath}}"></image>
+    </view>
+  </view>
+
+</view>  

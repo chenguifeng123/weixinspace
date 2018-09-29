@@ -1,0 +1,22 @@
+<swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}" wx:key="item.link">  
+        <swiper-item>  
+           <navigator url="{{item.link}}" hover-class="navigator-hover">  
+            <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+           </navigator>   
+        </swiper-item>  
+      </block>  
+</swiper> 
+
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text"  wx:for="{{orgnizationList}}" wx:key = "{{item.teacherId}}" >
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.teachingName}}</view>
+                    <view class="weui-media-box__desc">
+                    <image src="../img/position.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;" data-position="{{item.tude}}" data-address="{{item.address}}" bindtap="jumpMap"></image><text class="ognization" data-position="{{item.tude}}"  data-address="{{item.address}}" bindtap="jumpMap">{{item.address}}</text></view>
+                    <view class="weui-media-box__desc">
+                    <image src="../img/phone.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"  data-call="{{item.contact}}"  bindtap="calling"></image><text class="ognization" data-call="{{item.contact}}"  bindtap="calling">{{item.contact}}</text></view>
+                </view>
+            </view>
+        </view>

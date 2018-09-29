@@ -1,0 +1,39 @@
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd"><text class="title-desc" decode="emsp">&nbsp;&nbsp;拼课价格 </text></view>
+
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">
+                    <view class="description">试听时长:40分钟</view>
+                    <view class="description">试听方式:外教上门</view>
+                    </view>
+
+<!--view class="table">
+  <view class="tr bg-w">
+    <view class="th first">试听人数</view>
+    <view class="th second">价格(元/人)</view>
+  </view>
+  <block wx:for="{{price}}" wx:key="{{type}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td first">{{item.type}}</view>
+      <view class="td second">{{item.times}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td first">{{item.type}}</view>
+      <view class="td second">{{item.times}}</view>
+    </view>
+  </block>
+</view-->
+
+  <image src = "/pages/img/price.png" style="width:100%; height:160px;"/>
+
+    <!--view>
+      <view class="banner-bottom">转发红提外教的公众号文章至朋友圈并积攒50个，发截图给公众号或客服微信，可免费试听</view>
+
+    </view-->
+
+                </view>
+
+            </view>
+
+        </view>  

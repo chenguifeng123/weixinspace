@@ -1,0 +1,36 @@
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="success" size="93"></icon>
+        </view>
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">发起拼班成功</view>
+        </view>
+        <view class="weui-msg__extra-area">
+            <view class="weui-footer">
+                <view class="weui-footer__links">
+                    <navigator url="./classList" class="weui-footer__link">查看班级</navigator>
+                </view>
+                <view class="weui-footer__text">Copyright © 2016-2018 红提外教</view>
+            </view>
+        </view>
+    </view>
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+ 
+<view class="modalDlg" wx:if="{{showModal}}">
+    <view class="top-content">
+      <view class="top-font">
+        <view class="title">还差 {{kidNum - 1}} 人</view>
+        <view>邀请好友一起来拼单</view>
+      </view>
+    </view>
+    <view class="bottom-content" bindtap="go">
+    <button open-type='share' class="shareButton">
+      <image class="userinfo-avatar" src="../img/share.png" background-size="cover"></image>
+      <text class="userinfo-nickname">微信好友</text>
+      </button>
+    </view>
+</view>
+
+</view>

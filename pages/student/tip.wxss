@@ -1,0 +1,20 @@
+
+.tip-panel{
+  padding: 15px;
+
+}
+
+.inner-panel{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
+
+.tip-title{
+  font-size: 0.7em;
+}
+
+.display-button{
+  background-color: rgb(228, 228, 228);
+  margin: 2px;
+}

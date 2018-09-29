@@ -1,0 +1,109 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 5rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: white;
+  font-size: 1em;
+}
+
+.personal, button-personal{
+  background-color: #F3434B;
+}
+
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.weui-navbar{
+  position: relative;
+}
+
+.grade-left{
+  width: 30%; 
+  float: left; 
+  padding-left: 3px; 
+}
+
+.grade-right{
+  width: 65%;
+  float:left; 
+  padding-left: 10px;
+}
+
+
+.weui-tab__panel, .weui-tab__content{
+  padding-top: 0px;
+  font-size: 1em;
+}
+
+.weui-tab__content{
+  text-align: left;
+}
+
+.table {
+  border: 0px solid darkgray;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /*height: 1rem;*/
+  align-items: center;
+}
+.td {
+    /*width:25%;*/
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  /*width: 25%;*/
+  justify-content: center;
+  background: #F3434B;
+  color: #fff;
+  display: flex;
+  height: 1rem;
+  align-items: center;
+}
+
+.first{
+  width: 10%;
+}
+.second{
+  width: 35%;
+}
+.third{
+  width: 15%
+}
+.fourth{
+  width: 40%;
+}
+
+
+button[size="mini"]{
+  /*padding-left:20px;
+  padding-right:20px;*/
+  margin-left:3%;
+}
+
+
+button[disabled][type="default"], wx-button[disabled]:not([type]){
+  background-color: #F3434B;
+  color: white;
+}

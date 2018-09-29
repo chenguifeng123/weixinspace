@@ -1,0 +1,84 @@
+<view>
+
+
+<view class="personal">
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+
+<view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+
+                <view>
+
+                <!--view wx:for="{{grade}}" wx:key="item.value"><text class="grade-left">     {{item.name}}:</text> <text class="grade-right">{{item.value}}</text> </view-->
+
+                  <view class="weui-cells weui-cells_after-title">
+                  <view class="weui-cell" wx:for="{{grade}}" wx:key="item.value">
+                    <view class="weui-cell__bd" decode="{{true}}" space="{{true}}">
+                    <text class="grade-left">{{item.name}}</text> <text class="grade-right">{{item.value}}</text> 
+                     </view>
+                  </view>
+                </view>
+
+                </view>
+
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th first">类型</view>
+    <view class="th second">地址</view>
+    <view class="th third">老师</view>
+    <view class="th fourth">时间</view>
+  </view>
+  <block wx:for="{{teaching}}" wx:key="{{teachingAddress}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td first">{{item.teachingType}}</view>
+      <view class="td second">{{item.teachingAddress}}</view>
+      <view class="td third">{{item.teacherName}}</view>
+      <view class="td fourth">{{item.teachingTime}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td first">{{item.teachingType}}</view>
+      <view class="td second">{{item.teachingAddress}}</view>
+      <view class="td third">{{item.teacherName}}</view>
+      <view class="td fourth">{{item.teachingTime}}</view>
+    </view>
+  </block>
+</view>
+                
+                </view>
+
+                <!--view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                
+
+        <view class="weui-panel" wx:for="{{bookList}}" wx:key="{{item}}" wx:for-index="first">
+            <view class="weui-panel__hd" >{{book[item.bookId].desc}} {{first}}</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">选单元播放</view>
+                    
+                    <button class="weui-btn mini-btn" size="mini" wx:for="{{item.unitIdList}}" wx:for-item="unitData" data-book="{{item.bookId}}" data-unit="{{unitData.unitId}}" wx:key="{{unitData}}" data-index="{{index}}" data-first="{{first}}" bindtap="unitClick" class="default-button-class" disabled="{{btnDisabled[first][index]}}">{{unitData.unitId}}</button>
+
+                </view>
+            </view>
+        </view>
+
+                
+                </view-->
+
+            </view>
+  
+</view>

@@ -1,0 +1,36 @@
+.one-class{
+  margin: 10px;
+  border-top:solid #ff0000;
+}
+
+.person-list{
+  display: inline-block;
+}
+
+.class-address{
+  font-size: 1.3em;
+  color: black;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 5rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 0.7em;
+  display:block;
+  text-align:center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  width: 55px;
+}
+
+.user-img{
+  padding-left: 15px;
+  padding-top: 15px;
+}

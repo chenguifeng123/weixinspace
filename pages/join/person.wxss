@@ -1,0 +1,7 @@
+/* pages/join/person.wxss */
+@import "../common/age.wxss";
+
+.btn-person{
+  background-color: #F3434B;
+  color: white;
+}

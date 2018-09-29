@@ -1,0 +1,10 @@
+/* pages/join/setting.wxss */
+.btn-grade{
+  background-color: #F3434B;
+  color: white;
+}
+
+#message{
+    color:red;
+    text-align:center;font-size:12px; padding-top:8px;
+}

@@ -1,0 +1,34 @@
+<view>
+        <view class="one-class">
+            <view class="weui-panel__hd"><text class="title-desc" decode="emsp">&nbsp;&nbsp;拼班信息 </text> </view>
+
+            <view class="weui-panel__bd">
+
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">孩子年龄</view>
+                    <include src="../common/age.wxml"></include>
+                </view>
+
+                <view class="person-num">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">试听人数</view>
+                    <view class="weui-media-box__desc">
+                    为了提高开班率, 试听人数最好大于开班人数,最多6人
+                    </view>
+                    <view class="weui-media-box__desc control-num">
+                      <!--slider min="3" max="8"  show-value value="{{childNumber}}" bindchange="changeSlider"/-->
+                      <button class="control-btn btn-left" bindtap="minusChildNumber"><image src="{{'/pages/img/' + minusBtnImg + '.png'}}" style="width: 20px; height: 20px;"/></button>
+                      <button class="control-btn btn-middle">{{childNumber}}</button>
+                      <button class="control-btn btn-right" bindtap="addChildNumber"><image src="{{'/pages/img/' + addBtnImg + '.png'}}" style="width: 20px; height: 20px;"/></button>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+
+    <include src="../common/price.wxml"></include>
+      <view> <text decode="{{true}}"> &ensp;</text> </view>
+
+    <button class="weui-btn btn-grade" style="position: fixed; bottom: 0;width:100%" bindtap="joinClass">确定</button>
+
+</view>        

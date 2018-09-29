@@ -1,0 +1,76 @@
+<view>
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__bd">
+            <image class="banner" src="/pages/img/class-banner.jpg" ></image>
+                <view >
+                    <image src="/pages/img/tuijian.png" style="margin-left:15px;width: 15px; height: 15px; "/>
+                    <text decode="emsp" style="font-size:0.8em;">&nbsp;&nbsp;地址 : {{currentPersonList[0].address}}</text>
+                </view>
+
+                <view class="class-childage">
+                    <image src="/pages/img/child-age.png" style="margin-left:15px;width: 15px; height: 15px; "/>
+                    <text decode="emsp" style="font-size:0.6em;">&nbsp;&nbsp;发起人孩子年龄 : {{currentPersonList[0].childAge}} 岁</text>
+                    <text class="red-text" style="margin-left:30%; font-size:0.6em;">仅剩{{lastNum}}个名额</text>
+                </view>
+                
+
+            <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__desc">
+                        <view class="person-list" wx:for="{{currentPersonList}}" wx:key = "{{item.personId}}">
+                            <block>
+                                <image class="userinfo-avatar-local" src="{{item.iconPath}}" background-size="cover"></image>
+                                <text class="userinfo-nickname-local">{{item.nickName}}</text>
+                            </block>
+                        </view>
+                        <view class="person-list" wx:for="{{lastNumList}}" wx:key = "{{index}}">
+                            <block>
+                                <image class="userinfo-avatar-local" src="/pages/img/help.png" background-size="cover"></image>
+                                <text decode="emsp" class="userinfo-nickname-local">&nbsp;</text>
+                            </block>
+                        </view>
+                        <text class="tips">拼班成功后,红提工作人员会电话联系家长,并安排合适的外教上门, 请保持电话畅通</text>
+                        
+                    </view>
+                </view>
+            </view>
+            
+        </view>
+    </view>
+
+    <view class="auth">
+      <view class = "one-auth">
+        <image src="/pages/img/tick.png" class="tick-img" />
+        <text decode="emsp" class="tick-value">&nbsp;&nbsp;资格认证</text>
+      </view>
+      <view class = "one-auth">
+        <image src="/pages/img/tick.png" class="tick-img" />
+        <text decode="emsp" class="tick-value">&nbsp;&nbsp;安全承诺</text>
+      </view>
+      <view class = "one-auth">
+        <image src="/pages/img/tick.png" class="tick-img" />
+        <text decode="emsp" class="tick-value">&nbsp;&nbsp;贴心省心</text>
+      </view>
+    </view>
+
+    <include src="../common/price.wxml"></include>
+
+      <view class="show-title"><text class="title-desc" decode="emsp">&nbsp;&nbsp;其他拼班 </text> </view>
+
+        <view class="weui-panel weui-panel_access one-class" wx:for="{{pageJoinClass}}" wx:key = "{{item.classId}}"  data-class="{{item.classId}}" data-minnum="{{item.minNum}}"  bindtap="oneJoinClass">
+          <include src="../common/classTemp.wxml"></include>
+        </view>
+
+
+  <view class="bottom-button">
+    <button class="bottom-one-control btn-share"  bindtap="backHome">
+      <image src="/pages/img/logo-button.png" class="bottom-img"  style="width:60px;height:100%;"/>
+    </button>
+    <button open-type="share" class="bottom-one-control btn-share" >
+      <image src="/pages/img/share-btn.png" class="bottom-img"  style="width:60px;height:100%;"/>
+    </button>
+    <button open-type="getUserInfo" class="bottom-one-control new-btn" style="width:30%;height:100%;" bindgetuserinfo="joinClass">重新开班</button>
+    <button open-type="getUserInfo" class="bottom-one-control add-btn" style="width:30%;height:100%;" bindgetuserinfo="checkThenJoined">加入此班</button>
+  </view>
+
+</view>        

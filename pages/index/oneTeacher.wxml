@@ -1,0 +1,32 @@
+<view class="page">
+  <view class = "title">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{oneTeacher.photo}}" background-size="cover"></image>
+      <view class="user-desc">
+        <text class="userinfo-nickname">{{oneTeacher.lastName}}</text>
+        <image src="/pages/img/man.png" class="gender" wx:if="{{oneTeacher.gender == 0}}"></image>
+        <image src="/pages/img/women.png" class="gender"  wx:else></image>
+      </view>
+  </view>
+
+  <view class="teaching-info">
+    <view class="teaher-teaching teaher-teaching-left">
+        <view class="teaher-teaching-desc">教学区域</view>
+        <view class="teaher-teaching-value">{{oneTeacher.teachingArea}}</view>
+    </view>
+    <view class="teaher-teaching teaher-teaching-middle">
+      <view class="teaher-teaching-desc">教学经验</view>
+      <view class="teaher-teaching-value">{{oneTeacher.teachingExperience}}</view>
+    </view>
+    <view class="teaher-teaching teaher-teaching-right">
+      <view class="teaher-teaching-desc">上课时间</view>
+      <view class="teaher-teaching-value">{{oneTeacher.teachingTime}}</view>
+    </view>
+  </view>
+
+  <view class="intro">
+    <view class="intro-title">自我简介</view>
+    <view class="intro-desc" wx:if = "{{oneTeacher.introduction != ''}}">{{oneTeacher.introduction}} </view>
+    <view wx:else><text decode="{{true}}"> &ensp;</text> </view>
+  </view>
+
+</view>

@@ -1,0 +1,9 @@
+/* pages/song/songList.wxss */
+.weui-media-box__hd_in-appmsg{
+  width: 50%;
+}
+
+.weui-media-box__title image{
+  width: 100%;
+  height: 240px;
+}

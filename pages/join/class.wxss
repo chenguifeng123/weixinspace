@@ -1,0 +1,68 @@
+/* pages/join/class.wxss */
+@import "../common/age.wxss";
+@import "../common/price.wxss";
+
+.page, page{
+  background-color: #eee;
+}
+
+.one-class{
+  margin-bottom: 10px;
+  background-color:white;
+}
+
+.title-desc{
+  margin-left: 5px;
+  border-left-color: red;
+  border-left-width: 5px;
+  border-left-style: solid;
+  color: black;
+}
+
+.person-num{
+  padding: 15px;
+}
+
+.control-num{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.control-btn{
+  display: inline-block;
+  background-color: white;
+  height: 40px;
+}
+
+.btn-left{
+  width: 15%;
+}
+
+.btn-middle{
+  width: 20%;
+}
+
+.btn-right{
+  width: 15%;
+}
+
+.weui-panel__hd{
+  font-size: 20px;
+}
+
+.weui-panel:after{
+  border-bottom: 0rpx;
+}
+
+.btn-grade{
+  background-color: #F3434B;
+  color: white;
+}
+
+.weui-media-box__desc{
+  font-size: 15px;
+}
+
+.weui-media-box__title{
+  font-size: 15px;
+}

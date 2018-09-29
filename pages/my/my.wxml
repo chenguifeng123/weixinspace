@@ -1,0 +1,70 @@
+<view class="allPage">
+<view class="personal">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="refresh-personal">
+    <button class="weui-btn mini-btn button-personal" type="default" size="mini" open-type="getUserInfo" bindgetuserinfo="getUserInfo">刷新资料</button>
+  </view>
+</view>
+
+<modal hidden="{{hiddenmodalput}}" title="学员登录" confirm-text="确认" cancel-text="取消" bindcancel="studentInputCancel" bindconfirm="studentInputConfirm">  
+    <input type='text' placeholder="请输入11位学员编号/手机号" bindinput="studentInput"/>  
+</modal>  
+
+    <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__desc"> 
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell" bindtap="studentLogin">
+                <view class="weui-cell__hd">
+                    <image src="../img/student.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">我的学习</view>
+            </view>
+            <view class="weui-cell" bindtap="joinDetail">
+                <view class="weui-cell__hd">
+                    <image src="../img/cart.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd" >我的拼班</view>
+            </view>
+            <view class="weui-cell" bindtap="setUserInfo">
+                <view class="weui-cell__hd">
+                    <image src="../img/setting.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">个人信息</view>
+            </view>
+            <view class="weui-cell" bindtap="clear">
+                <view class="weui-cell__hd">
+                    <image src="../img/refresh.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">退出登录</view>
+            </view>
+            <view class="weui-cell" bindtap="jumpContact">
+                <view class="weui-cell__hd">
+                    <image src="../img/class.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">联系我们</view>
+            </view>
+
+            <view class="weui-cell" bindtap="jumpSales">
+                <view class="weui-cell__hd">
+                    <image src="../img/sales.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">红提小店</view>
+            </view>
+
+        </view>
+
+</view>
+</view>
+</view>
+</view>
+  
+</view>

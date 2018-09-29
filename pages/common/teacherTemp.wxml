@@ -1,0 +1,32 @@
+        <!-- 头像 -->
+        <view class="teacher-left-info"> 
+          <image class="teacher-photo" src="{{hometeach + item.photo}}" background-size="cover"></image>
+        </view>
+        <!-- 信息 -->
+        <view class="teacher-right-info"> 
+          <view  class="teacher-desc-info"> 
+            <text> {{item.lastName}} </text>
+            <image src="{{'/pages/img/' + item.rating +'.png'}}" style="width: 25px; height: 25px; "/>
+          </view>
+          <view class="teacher-button-info" > 
+            <button class="teacher-btn-country">{{item.county}}</button> 
+            <button class="teacher-btn-gender-boy" wx:if="{{item.gender == 0}}">男</button> 
+            <button class="teacher-btn-gender-girl" wx:else>女</button> 
+          </view>
+        
+        </view>
+
+        <view class="teacher-teaching-list">
+          <view class="teaher-teaching-left">
+            <view class="teaher-teaching-desc">教学区域</view>
+            <view class="teaher-teaching-value">{{item.teachingArea}}</view>
+          </view>
+          <view class="teaher-teaching-middle">
+            <view class="teaher-teaching-desc">教学经验</view>
+            <view class="teaher-teaching-value">{{item.teachingExperience}}</view>
+          </view>
+          <view class="teaher-teaching-right">
+            <view class="teaher-teaching-desc">上课时间</view>
+            <view class="teaher-teaching-value">{{item.teachingTime}}</view>
+          </view>
+        </view>

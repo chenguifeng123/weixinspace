@@ -1,0 +1,82 @@
+.one-teacher{
+  margin: 10px;
+  background-color: white;
+}
+
+.teacher-photo{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+
+.teacher-left-info, .teacher-right-info{
+  display: inline-block;
+}
+
+.teacher-right-info{
+  margin: 15px;
+}
+
+.teacher-desc-info{
+  margin: 10px;
+}
+
+.teacher-button-info{
+  margin: 0px;
+}
+
+.teacher-btn-country, .teacher-btn-gender-boy, .teacher-btn-gender-girl{
+  color: rgb(0, 0, 0);
+  font-size: 0.75em;
+  height: 35px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.teacher-btn-country{
+  width: 100px;
+  background-color: rgb(226, 236, 232);
+}
+
+.teacher-btn-gender-boy{
+  width: 60px;
+  border-radius: 5px;
+  color: white;
+  background-color:blue;
+}
+
+.teacher-btn-gender-girl{
+  width: 60px;
+  border-radius: 5px;
+  color: white;
+  background-color:rgb(248, 72, 175);
+}
+
+.teacher-teaching-list{
+  margin-bottom: 10px;
+}
+
+.teaher-teaching-left, .teaher-teaching-middle, .teaher-teaching-right{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.teaher-teaching-middle, .teaher-teaching-right{
+  border-left-color: #999;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.teaher-teaching-desc{
+  font-size: 0.7em;
+  color:#999;
+}
+
+.teaher-teaching-value{
+  font-size: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}

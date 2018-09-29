@@ -1,0 +1,11 @@
+/* pages/my/sales.wxss */
+.sales{
+  width: 258px;
+  height: 258px;
+  display:block; 
+  margin:auto;
+}
+
+.sales-text{
+  font-size: 0.8em;
+}

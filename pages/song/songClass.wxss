@@ -1,0 +1,8 @@
+/* pages/song/SongClass.wxss */
+.weui-cells:after{
+  border: 0rpx;
+}
+
+image{
+  width: 100%;
+}

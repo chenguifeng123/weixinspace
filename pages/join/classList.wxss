@@ -1,0 +1,22 @@
+@import "../common/classTemp.wxss";
+
+page, .page{
+  background-color: #eee;
+}
+
+.weui-btn{
+  margin-top:0px;
+}
+
+.btn-joinClass{
+  background-color: #F3434B;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.red-text{
+  color: red;
+}
+

@@ -1,0 +1,20 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <!--view class="page__title">Input</view-->
+        <view class="page__desc">拼班信息</view>
+    </view>
+    <view class="page__bd">
+
+        <!--view class="weui-cells__title">表单</view-->
+        <include src="../common/contact.wxml"></include>
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">孩子年龄</view>
+                    <include src="../common/age.wxml"></include>
+                </view>
+  <view id="message">
+    {{showTopTips}}
+  </view>
+    <button class="weui-btn btn-person" bindtap="confirm">确认加入</button>
+
+    </view>
+</view>    

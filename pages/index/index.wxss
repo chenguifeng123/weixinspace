@@ -1,0 +1,84 @@
+@import "../common/classTemp.wxss";
+@import "../common/teacherTemp.wxss";
+
+.page{
+  background-color: #eee;
+}
+
+.btn-first{
+  background-color: #F3434B;
+  color: white;
+
+  float: right;
+  font-size: 0.75em;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.slide-image{  
+    width: 100%;  
+}  
+
+.top-title, .show-title{
+  background-color: white;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.title-desc{
+  margin-left: 5px;
+  border-left-color: red;
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+
+.bottom-title{
+  color: black;
+}
+
+.one-class{
+  margin: 10px;
+  border-top:solid #ff0000;
+}
+
+.show-more{
+  text-align: center;
+  color: blue;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.one-teacher{
+  margin: 10px;
+  background-color: white;
+}
+
+.weui-panel:after{
+  border:0px;
+}
+
+.btn-grade{
+  background-color: #F3434B;
+  color: white;
+}
+
+image{
+  height: 150px;
+}
+
+.weui-btn{
+  margin-top:0px;
+}
+
+.btn-joinClass{
+  background-color: #F3434B;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.red-text{
+  color: red;
+}

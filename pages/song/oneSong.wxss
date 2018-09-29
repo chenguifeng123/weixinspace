@@ -1,0 +1,4 @@
+/* pages/song/oneSong.wxss */
+video{
+  width: 100%;
+}

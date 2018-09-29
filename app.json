@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/allTeacher",
+    "pages/index/oneTeacher",
+    "pages/index/intro",
+    "pages/ognization/ognization",
+    "pages/my/my",
+    "pages/my/user",
+    "pages/my/contact",
+    "pages/my/sales",
+    "pages/my/voice",
+    "pages/join/setting",
+    "pages/join/class",
+    "pages/join/classList",
+    "pages/join/person",
+    "pages/join/oneClass",
+    "pages/join/detail",
+    "pages/join/success",
+    "pages/join/fail",
+    "pages/student/student",
+    "pages/student/tip",
+    "pages/song/songList",
+    "pages/song/oneSong",
+    "pages/song/songClass"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "外教上门",
+        "iconPath": "pages/img/home.png"
+      },
+      {
+        "pagePath": "pages/student/tip",
+        "text": "学习要点",
+        "iconPath": "pages/img/join.png"
+      },
+      {
+        "pagePath": "pages/ognization/ognization",
+        "text": "教学点",
+        "iconPath": "pages/img/address.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/img/account.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F3434B",
+    "navigationBarTitleText": "红提外教",
+    "backgroundColor": "#eeeeee",
+    "navigationBarTextStyle": "white"
+  }
+}

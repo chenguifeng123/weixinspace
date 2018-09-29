@@ -1,0 +1,46 @@
+<!--web-view src="https://open.weixin.qq.com/connect/oauth2/authorize"></web-view-->
+<view class="page">
+    <view class="page__hd">
+        <!--view class="page__title">学纯正口语，选HomeTeach南京红提外教</view-->
+        <!--view class="page__desc">文章</view-->
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1"> 南京红提简介</view>
+            <view class="weui-article__section">
+                    <view class="weui-article__p">
+                    <text class="article-text">南京HomeTeach（中文名：南京红提外教），致力于打造国内英语启蒙领导品牌，专注于提供真人外教面对面英语启蒙服务，品牌隶属于南京他乡网络科技有限公司。外教课一经推出立刻受到家长的欢迎，所有班级都来自于家长转介绍，现已发展为南京地区规模最大的外教O2O服务提供商之一。</text>
+                    </view>
+                    
+                    <view class="weui-article__p">
+                    <text class="article-text">HomeTeach采用小班制互动教学，不同于在线教学中孩子只能对着屏幕的丫丫学语，打破了孩子一对一时不敢主动开口的尴尬局面。同时，在家里有家长的陪伴，孩子能够更放松的和真人外教面对面交流，真正帮助孩子以最有效、最便捷的方式突破聋哑英语的障碍，快速练就一口流利纯正的英语口语。</text>
+                    </view>
+                    <view class="weui-article__p">
+                        <!--view class="split"></view-->
+                    </view>
+
+                    <view class="weui-article__p">
+                    <text class="article-text">“HomeTeach”品牌策划始于2016年11月中旬。 12月通过“南京亲子大联盟”公众号小范围开展 “9.9元外教上门试听”推广业务，开始落地运营。 2017年2月， “HomeTeach”开始与南京本地教学机构共同策划推出 “外教入班”业务。2018年2月，红提外教小程序将投入使用。</text>
+                    </view>
+
+                    <view class="weui-article__p">
+                        <image class="weui-article__img show-article" src="/pages/img/article.jpg" mode="aspectFit" />
+                    </view>
+                </view>
+                
+
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                    <text class="article-text">运营至今，已获得400多个家庭关注，100多个家庭享受到了外教上门的服务。目前已有30位优质外教在册。</text>
+                    <text class="article-text">2017年，HomeTeach与多家幼儿托管、培训机构共同合作推进“外教入班”业务，现已有20多个班级。</text>
+                    <text class="article-text">2018年2月上旬，推出红提外教小程序,实现线上线下联合，实现自主拼班和学习跟踪。</text>
+                    </view>
+
+                    <view class="weui-article__p">
+                        <image class="weui-article__img show-article1" src="/pages/img/article1.jpg" mode="aspectFit" />
+                    </view>
+                </view>
+
+            </view>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+<view>
+
+
+        <view class="tip-panel" wx:for="{{bookList}}" wx:key="{{item}}" wx:for-index="first">
+
+          <view class="inner-panel">
+
+                    <view class="">
+                      <image src="/pages/img/tips.png" style="width: 25px; height: 25px; " />
+                      {{book[item.bookId].desc}} </view>
+                    <view class="tip-title"> 选单元播放</view>
+                    
+                    <button class="default-button-class weui-btn mini-btn display-button" size="mini" wx:for="{{item.unitIdList}}" wx:for-item="unitData" data-book="{{item.bookId}}" data-unit="{{unitData.unitId}}" wx:key="{{unitData}}" data-index="{{index}}" data-first="{{first}}" bindtap="unitClick" disabled="{{btnDisabled[first][index]}}">{{unitData.unitId}}</button>
+
+          </view>
+
+        </view>
+
+</view>
